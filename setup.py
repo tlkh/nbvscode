@@ -5,17 +5,17 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="jupyter-vscode-server",
-    version="0.0.5",
+    version="0.0.6",
     author="Timothy Liu",
     author_email="timothyl@nvidia.com",
-    description="A Jupyter extension to launch code-server (VS Code)",
+    description="A Jupyter extension to launch VS Code",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/tlkh/nbvscode",
-    py_modules=['opencode'],
+    url="https://github.com/tlkh/jupyter-vscode-server",
+    py_modules=['nbvscode'],
     entry_points={
         'jupyter_serverproxy_servers': [
-            'opencode = opencode:setup_opencode',
+            'nbvscode = nbvscode:setup_nbvscode',
         ]
     },
     classifiers=[
