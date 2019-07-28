@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="jupyter-vscode-server",
-    version="0.0.9",
+    version="0.0.10",
     author="Timothy Liu",
     author_email="timothyl@nvidia.com",
     description="A Jupyter extension to launch VS Code",
